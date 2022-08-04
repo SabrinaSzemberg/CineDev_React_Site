@@ -1,6 +1,7 @@
 import React from 'react'
+import S from './CardCliente.module.css'
 
-const CardFilme = ({name, email, password, payment, club}) => {
+const CardCliente = ({name, email, password, payment, club}) => {
   return (
     <div>
         <h3>{name}</h3>
@@ -12,4 +13,4 @@ const CardFilme = ({name, email, password, payment, club}) => {
   )
 }
 
-export default CardFilme
+export default CardCliente
