@@ -1,9 +1,20 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import CardCliente from '../../Components/CardCliente/CardCliente'
+import { getClientes } from '../../Service/Api'
 import S from './ListaClientes.module.css'
 
 const ListaClientes = () => {
   const [clientes, setClientes] = useState([])
+
+  async function requistion(){
+    const response = await getClientes();
+    setClientes(response)
+    console.log(clientes)
+  }
+  
+  useEffect(()=>{
+    requistion()
+  },[])
 
   return (
     <div className={S.content}>
