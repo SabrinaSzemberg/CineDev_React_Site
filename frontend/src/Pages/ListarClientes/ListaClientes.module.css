@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 15vh 85vh;
+    padding-bottom: 40px;
 }
 
 .titulo{
@@ -12,7 +13,6 @@
 }
 
 .clientes{
-    padding-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;

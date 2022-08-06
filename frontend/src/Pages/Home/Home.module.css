@@ -1,0 +1,61 @@
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100vh;
+    grid-template-areas: 'r r r l l';
+    background-image: url('https://assets.reedpopcdn.com/netflix-1634494156234.jpg/BROK/resize/1200x1200%3E/format/jpg/quality/70/netflix-1634494156234.jpg');
+    background-repeat: no-repeat;
+}
+
+
+.right{
+    grid-area: r;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left{
+    grid-area: l;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.options{
+    background-color: rgb(55, 55, 55);
+    height: 70%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 3px;
+}
+
+.options>nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 80%;
+}
+
+.link {
+    color: #ffff;
+    font-size: 16px;
+    background-color: #E80000;
+    height: 35px;
+    width: 100%;
+    border-radius: 4px;
+    transition-duration: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link:hover{
+    background-color: rgba(236, 228, 228, 0.09);
+    color: white;
+}
