@@ -2,22 +2,30 @@ import React, { useState } from "react";
 import S from "./ShowClientId.module.css";
 
 const ShowClientId = () => {
-  const [clientes, setClientes] = useState([])
-  const [input, setInput] = useState('')
+  const [clientes, setClientes] = useState([]);
+  const [input, setInput] = useState();
 
-  function handleInput(target){
-    setInput(target.value)
-    console.log(input)
+  function handleInput(target) {
+    setInput(target.value);
+    console.log(input);
   }
 
   return (
     <section className={S.content}>
-      <form>
-        <label htmlFor="">Selecione o id de um cliente:</label>
-        <input type="text" value={input} onChange={({target})=>handleInput(target)}/>
-        <button>Pesquisar</button>
-      </form>
-      <div className={S.clientes}>
+      <div className={S.form}>
+        <form >
+          <label htmlFor="" className={S.label}>Selecione o id de um cliente:</label>
+          <input
+            type="number"
+            value={input}
+            onChange={({ target }) => handleInput(target)}
+            className={S.input}
+          />
+          <button className={S.button}>Pesquisar</button>
+        </form>
+      </div>
+
+      <div className={S.cliente}>
         {!!clientes &&
           clientes.map((cliente) => {
             return (
