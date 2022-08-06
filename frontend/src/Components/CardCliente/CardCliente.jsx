@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import S from "./CardCliente.module.css";
 
 const CardCliente = ({ name, email, password, payment, club }) => {
@@ -13,7 +14,7 @@ const CardCliente = ({ name, email, password, payment, club }) => {
         <p>Pagamento: {payment}</p>
         <p>Clube: {club}</p>
       </div>
-      <button>Editar</button>
+      <Link to='/' className={S.link}>Editar</Link>
     </div>
   );
 };
