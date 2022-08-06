@@ -10,3 +10,10 @@ export const getClientes = async () =>{
     console.log(json)
     return json
 }
+
+export const getClienteId = async (id) =>{
+    const response = await instance.get(`/clientes/${id}`)
+    const json = await response.data
+    // console.log(json)
+    return json
+}
