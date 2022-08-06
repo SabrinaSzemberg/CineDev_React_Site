@@ -14,7 +14,7 @@ const CardCliente = ({ name, email, password, payment, club }) => {
         <p>Pagamento: {payment}</p>
         <p>Clube: {club}</p>
       </div>
-      <Link to='/' className={S.link}>Editar</Link>
+      <Link to="/" className={S.link}>Editar</Link>
     </div>
   );
 };

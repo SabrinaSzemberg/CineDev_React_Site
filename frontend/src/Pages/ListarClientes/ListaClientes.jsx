@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import CardCliente from '../../Components/CardCliente/CardCliente'
+import Loading from '../../Components/Loading/Loading'
 import { getClientes } from '../../Service/Api'
 import S from './ListaClientes.module.css'
 
@@ -20,8 +21,7 @@ const ListaClientes = () => {
     <div className={S.content}>
       <h2 className={S.titulo}>Lista de Clientes:</h2>
       <div className={S.clientes}>
-        {!!clientes &&
-          clientes.map((cliente) => {
+        {!!clientes ? clientes.map((cliente) => {
             return (
               <CardCliente
                 key={cliente.ID}
@@ -32,7 +32,7 @@ const ListaClientes = () => {
                 club={cliente.CLUB}
               />
             );
-          })}
+          }) : <Loading/>}
       </div>
     </div>
   )
