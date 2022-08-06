@@ -6,14 +6,14 @@ import S from './ListaClientes.module.css'
 const ListaClientes = () => {
   const [clientes, setClientes] = useState([])
 
-  async function requistion(){
+  async function requisition(){
     const response = await getClientes();
     setClientes(response)
     console.log(clientes)
   }
   
   useEffect(()=>{
-    requistion()
+    requisition()
   },[])
 
   return (
@@ -24,12 +24,12 @@ const ListaClientes = () => {
           clientes.map((cliente) => {
             return (
               <CardCliente
-                key={cliente.id}
-                name={cliente.name}
-                email={cliente.email}
-                password={cliente.password}
-                payment={cliente.payment}
-                club={cliente.clun}
+                key={cliente.ID}
+                name={cliente.NAME}
+                email={cliente.EMAIL}
+                password={cliente.PASSWORD}
+                payment={cliente.PAYMENT}
+                club={cliente.CLUB}
               />
             );
           })}

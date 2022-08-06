@@ -10,6 +10,12 @@
     justify-content: center;
     align-items: center;
 }
-/* 
+
 .clientes{
-} */
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
