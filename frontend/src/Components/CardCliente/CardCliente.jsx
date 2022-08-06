@@ -13,6 +13,7 @@ const CardCliente = ({ name, email, password, payment, club }) => {
         <p>Pagamento: {payment}</p>
         <p>Clube: {club}</p>
       </div>
+      <button>Editar</button>
     </div>
   );
 };
