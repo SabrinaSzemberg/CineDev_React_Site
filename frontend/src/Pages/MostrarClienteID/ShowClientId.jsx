@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import CardCliente from "../../Components/CardCliente/CardCliente";
+import Loading from "../../Components/Loading/Loading";
 import { getClienteId } from "../../Service/Api";
 import S from "./ShowClientId.module.css";
 
@@ -38,7 +39,7 @@ const ShowClientId = () => {
         </form>
       </div>
       <div className={S.cliente}>
-        {!!clientes &&
+        {!!clientes ?
           clientes.map((cliente) => {
             return (
               <CardCliente
@@ -50,7 +51,7 @@ const ShowClientId = () => {
                 club={cliente.CLUB}
               />
             );
-          })}
+          }) : <Loading/>}
       </div>
     </section>
   );
