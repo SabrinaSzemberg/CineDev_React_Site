@@ -13,9 +13,10 @@
 }
 
 .clientes{
+    padding: 0 2px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }

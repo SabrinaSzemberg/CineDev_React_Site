@@ -14,7 +14,7 @@ const AdicionarCliente = () => {
 
     function handleDadosForm(target, nomeInput){
         const value = target.value;
-        setDadosForms({...dadosForms, [nomeInput]: value});
+        setDados({...dadosForms, [nomeInput]: value});
     }
 
     function fazerPost(){

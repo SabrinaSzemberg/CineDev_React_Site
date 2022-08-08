@@ -6,7 +6,20 @@
     background-image: url('https://i.pinimg.com/originals/95/ea/f8/95eaf8f43b75d58122081002ebf31d61.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    animation: zoom 25ms;
 }
+
+@keyframes zoom {
+      100% {
+        transform: scale(2);
+      }
+      0% {
+        transform: scale(3.9);
+      }
+}
+    
+
+
 
 
 .right{
@@ -54,6 +67,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+span {
+    color: white;
+    font-size: 20px;
 }
 
 .link:hover{

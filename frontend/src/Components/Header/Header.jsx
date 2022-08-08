@@ -5,7 +5,7 @@ import S from './Header.module.css'
 const Header = () => {
   return (
     <header className={S.header}>
-      <Link className="titulo" to="/">CineDev</Link>
+      <Link className="titulo" to="/">MegaFlix<span>HD</span></Link>
       <nav>
       <Link className="crud" to="/">Adicionar</Link>
       <Link className="crud" to="/get">Clientes</Link>
