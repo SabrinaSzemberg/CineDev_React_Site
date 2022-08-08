@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 15vh 85vh;
+    padding-bottom: 40px;
 }
 
 .titulo{
@@ -10,6 +11,11 @@
     justify-content: center;
     align-items: center;
 }
-/* 
+
 .clientes{
-} */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
