@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ListaClientes from "../ListarClientes/ListaClientes";
+import postClientes from "../AdicionarCliente/AdicionarCliente"
 import S from "./Home.module.css";
 
 const Home = () => {
@@ -12,7 +13,7 @@ const Home = () => {
         <div className={S.options}>
           <h1>Oque você quer fazer?</h1>
           <nav>
-            <Link className={S.link} to="/">Adicionar Cliente</Link>
+            <Link className={S.link} to="/post">Adicionar Cliente</Link>
             <Link className={S.link} to="/get">Lista de Clientes</Link>
             <Link className={S.link} to="/getClienteId">Procurar Cliente</Link>
           </nav>

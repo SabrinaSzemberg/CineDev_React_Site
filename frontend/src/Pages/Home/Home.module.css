@@ -3,8 +3,9 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 100vh;
     grid-template-areas: 'r r r l l';
-    background-image: url('https://assets.reedpopcdn.com/netflix-1634494156234.jpg/BROK/resize/1200x1200%3E/format/jpg/quality/70/netflix-1634494156234.jpg');
+    background-image: url('https://i.pinimg.com/originals/95/ea/f8/95eaf8f43b75d58122081002ebf31d61.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 

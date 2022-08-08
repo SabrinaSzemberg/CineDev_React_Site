@@ -6,6 +6,7 @@ import S from './ListaClientes.module.css'
 
 const ListaClientes = () => {
   const [clientes, setClientes] = useState([])
+  
 
   async function requisition(){
     const response = await getClientes();

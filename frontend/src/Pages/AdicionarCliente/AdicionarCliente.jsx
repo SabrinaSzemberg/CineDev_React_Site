@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { postClientes } from '../../Service/Api'
 import S from "./AdicionarCliente.module.css"
 
