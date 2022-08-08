@@ -17,3 +17,9 @@ export const getClienteId = async (id) =>{
     // console.log(json)
     return json
 }
+
+export const deleteClienteId = async (id) =>{
+    const response = await instance.delete(`/clientes/${id}`)
+    const alerta = alert("Cliente deletado")
+    return alerta
+}

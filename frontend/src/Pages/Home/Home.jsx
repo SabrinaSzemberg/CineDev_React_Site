@@ -16,7 +16,7 @@ const Home = () => {
             <Link className={S.link} to="/get">Get</Link>
             <Link className={S.link} to="/getClienteId">Get Id</Link>
             <Link className={S.link} to="/">Put</Link>
-            <Link className={S.link} to="/">Delete</Link>
+            <Link className={S.link} to="/Delete">Delete</Link>
           </nav>
         </div>
       </section>
