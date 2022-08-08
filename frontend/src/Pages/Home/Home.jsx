@@ -12,11 +12,9 @@ const Home = () => {
         <div className={S.options}>
           <h1>Oque você quer fazer?</h1>
           <nav>
-            <Link className={S.link} to="/">Post</Link>
-            <Link className={S.link} to="/get">Get</Link>
-            <Link className={S.link} to="/getClienteId">Get Id</Link>
-            <Link className={S.link} to="/">Put</Link>
-            <Link className={S.link} to="/Delete">Delete</Link>
+            <Link className={S.link} to="/">Adicionar Cliente</Link>
+            <Link className={S.link} to="/get">Lista de Clientes</Link>
+            <Link className={S.link} to="/getClienteId">Procurar Cliente</Link>
           </nav>
         </div>
       </section>

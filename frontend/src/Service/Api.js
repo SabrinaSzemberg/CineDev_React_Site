@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-    baseURL: 'https://cinedevjessica.herokuapp.com'
+    baseURL: 'http://localhost:3000'
 })
 
 export const getClientes = async () =>{
@@ -20,6 +20,7 @@ export const getClienteId = async (id) =>{
 
 export const deleteClienteId = async (id) =>{
     const response = await instance.delete(`/clientes/${id}`)
+    console.log(response)
     const alerta = alert("Cliente deletado")
     return alerta
 }

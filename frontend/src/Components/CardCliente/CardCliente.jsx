@@ -1,8 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import S from "./CardCliente.module.css";
+import { deleteClienteId } from "../../Service/Api";
 
-const CardCliente = ({ name, email, password, payment, club }) => {
+const CardCliente = ({ id, name, email, password, payment, club }) => {
+  
+  async function requisition() {
+    await deleteClienteId(id);
+    location.reload()
+    }
+  
   return (
     <div className={S.card}>
       <div>
@@ -15,6 +22,7 @@ const CardCliente = ({ name, email, password, payment, club }) => {
         <p>Clube: {club}</p>
       </div>
       <Link to="/" className={S.link}>Editar</Link>
+      <button onClick={requisition} className={S.link} >Excluir</button>
     </div>
   );
 };
