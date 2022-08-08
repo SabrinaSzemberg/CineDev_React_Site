@@ -17,3 +17,9 @@ export const getClienteId = async (id) =>{
     // console.log(json)
     return json
 }
+
+export const postClientes = async(clientes) => {
+    const response = await instance.post('/clientes', clientes)
+    const json = await response.data.msg
+    return json
+}
