@@ -1,12 +1,27 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import ListaClientes from "../ListarClientes/ListaClientes";
 import postClientes from "../AdicionarCliente/AdicionarCliente"
 import S from "./Home.module.css";
+import Loading from "../../Components/Loading/Loading";
+import { useEffect } from "react";
 
 const Home = () => {
+
+  const [removeLoading, setRemoveLoading] = useState(false)
+
+   //Configuração do tempo
+   useEffect(() => {
+    setTimeout(() => {
+       setRemoveLoading(true)
+    }, 3000) 
+   })
+
   return (
+    
     <main className={S.content}>
+      {!removeLoading && <Loading />}
+  
       <section className={S.right}>
       </section>
       <section className={S.left}>
