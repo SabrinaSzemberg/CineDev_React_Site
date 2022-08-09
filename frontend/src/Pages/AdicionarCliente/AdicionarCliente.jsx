@@ -5,11 +5,11 @@ import S from "./AdicionarCliente.module.css"
 const AdicionarCliente = () => {
 
     const [dadosForms, setDados] = useState({
-        name:"",
-        email:"",
-        password:"",
-        payment:"",
-        club:""
+        NAME:"",
+        EMAIL:"",
+        PASSWORD:"",
+        PAYMENT:"",
+        CLUB:""
     });
 
     function handleDadosForm(target, nomeInput){
@@ -29,32 +29,32 @@ const AdicionarCliente = () => {
                 <label htmlFor="">Name</label>
                 <input
                     type="text"
-                    value={dadosForms.name}
-                    onChange={({target}) => handleDadosForm(target, "name")}
+                    value={dadosForms.NAME}
+                    onChange={({target}) => handleDadosForm(target, "NAME")}
                 />
                 <label htmlFor="">Email</label>
                 <input
                     type="text"
-                    value={dadosForms.email}
-                    onChange={({target}) => handleDadosForm(target, "email")}
+                    value={dadosForms.EMAIL}
+                    onChange={({target}) => handleDadosForm(target, "EMAIL")}
                 />
                 <label htmlFor="">Password</label>
                 <input
                     type="text"
-                    value={dadosForms.password}
-                    onChange={({target}) => handleDadosForm(target, "password")}
+                    value={dadosForms.PASSWORD}
+                    onChange={({target}) => handleDadosForm(target, "PASSWORD")}
                 />
                 <label htmlFor="">Payment</label>
                 <input
                     type="text"
-                    value={dadosForms.payment}
-                    onChange={({target}) => handleDadosForm(target, "payment")}
+                    value={dadosForms.PAYMENT}
+                    onChange={({target}) => handleDadosForm(target, "PAYMENT")}
                 />
                 <label htmlFor="">Club</label>
                 <input
                     type="text"
-                    value={dadosForms.club}
-                    onChange={({target}) => handleDadosForm(target, "club")}
+                    value={dadosForms.CLUB}
+                    onChange={({target}) => handleDadosForm(target, "CLUB")}
                 />
             </form>
         </section>
