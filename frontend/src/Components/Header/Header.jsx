@@ -7,7 +7,7 @@ const Header = () => {
     <header className={S.header}>
       <Link className="titulo" to="/">MegaFlix<span>HD</span></Link>
       <nav>
-      <Link className="crud" to="/">Adicionar</Link>
+      <Link className="crud" to="/post">Adicionar</Link>
       <Link className="crud" to="/get">Clientes</Link>
       <Link className="crud" to="/getClienteId">Procurar</Link>
       </nav>
