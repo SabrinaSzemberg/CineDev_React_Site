@@ -9,7 +9,6 @@ Como parte do último módulo do projeto do curso de Web Dev Full Stack, ofereci
 
 **![](https://lh3.googleusercontent.com/Gjhkd-AYNFUtoadUnNt2_whQh03BtPW1BRDJGqrMdjTflehOvi1q618O9k-lTBkU5TIFqKBxU9jj4TPmChEpbFLpaMBDeMmX0aGPCPIz2-8J2H04abQPDeFuS6XRcCWfTwYgVvIWGqz681gzATX5x3w)**
 
-
 # Utilizando a aplicação:
 
 #### 1º passo: Clonar o projeto.
