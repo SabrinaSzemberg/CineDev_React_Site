@@ -73,7 +73,7 @@ const EditarCliente = () => {
                 />
             </form>
         </section>
-        <section>
+        <section className={S.lowerSection}>
             <button onClick={()=>fazerPut()}>Salvar</button>
         </section>
     </section>
