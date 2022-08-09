@@ -25,6 +25,12 @@ export const postClientes = async(clientes) => {
     return json
 }
 
+export const putClientes = async(clientes, id) => {
+    const response = await instance.put(`/clientes/${id}`, clientes)
+    console.log(response)
+    return await response.data.msg
+}
+
 export const deleteClienteId = async (id) =>{
     const response = await instance.delete(`/clientes/${id}`)
     console.log(response)
