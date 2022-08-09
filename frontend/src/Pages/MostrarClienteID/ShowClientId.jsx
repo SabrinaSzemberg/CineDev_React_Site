@@ -44,6 +44,7 @@ const ShowClientId = () => {
             return (
               <CardCliente
                 key={cliente.ID}
+                id={cliente.ID}
                 name={cliente.NAME}
                 email={cliente.EMAIL}
                 password={cliente.PASSWORD}
