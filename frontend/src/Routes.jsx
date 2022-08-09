@@ -6,6 +6,7 @@ import Delete from "./Pages/Delete/Delete"
 import ListaClientes from "./Pages/ListarClientes/ListaClientes";
 import ShowClientId from "./Pages/MostrarClienteID/ShowClientId";
 import AdicionarCliente from "./Pages/AdicionarCliente/AdicionarCliente";
+import EditarCliente from "./Pages/EditarCliente/EditarCliente.jsx";
 
 const Routes = () => {
   return (
@@ -18,6 +19,7 @@ const Routes = () => {
         <Route path='/get' element={<ListaClientes/>}/>
         <Route path='/getClienteId' element={<ShowClientId/>}/>
         <Route path="/post" element={<AdicionarCliente/>}/>
+        <Route path="/put" element={<EditarCliente/>}/>
       </Switch>
     </BrowserRouter>
   );

@@ -21,7 +21,7 @@ const CardCliente = ({ id, name, email, password, payment, club }) => {
         <p>Pagamento: {payment}</p>
         <p>Clube: {club}</p>
       </div>
-      <Link to="/" className={S.link}>Editar</Link>
+      <Link to={"/put?id="+ id} className={S.link}>Editar</Link>
       <button onClick={requisition} className={S.link} >Excluir</button>
     </div>
   );
