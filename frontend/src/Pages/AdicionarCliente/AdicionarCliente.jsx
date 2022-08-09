@@ -58,7 +58,7 @@ const AdicionarCliente = () => {
                 />
             </form>
         </section>
-        <section>
+        <section className={S.lowerSection}>
             <button onClick={()=>fazerPost()}>Salvar</button>
         </section>
     </section>

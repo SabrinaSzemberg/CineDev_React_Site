@@ -40,6 +40,7 @@
     height: 35px;
     border-radius: 3px;
     transition-duration: 0.2s;
+    font-size: 16px;
     background-color: red;
     color: white;
     border: none;
