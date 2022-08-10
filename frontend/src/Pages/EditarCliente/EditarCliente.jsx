@@ -71,6 +71,7 @@ const EditarCliente = () => {
                 <label htmlFor="">Email</label>
                 <input
                     type="text"
+                    placeholder="Email" 
                     value={dadosForm.email}
                     onChange={({target}) => handleDadosForm(target, "email")}
                 />
@@ -78,6 +79,8 @@ const EditarCliente = () => {
                 <label htmlFor="">Password</label>
                 <Field
                     type="text"
+                    placeholder="Password"
+                    
                     value={dadosForm.password}
                     onChange={({target}) => handleDadosForm(target, "password")}
                 />
@@ -85,12 +88,14 @@ const EditarCliente = () => {
                 <label htmlFor="">Payment</label>
                 <input
                     type="text"
+                    placeholder="Payment"
                     value={dadosForm.payment}
                     onChange={({target}) => handleDadosForm(target, "payment")}
                 />
                 <label htmlFor="">Club</label>
                 <input
                     type="text"
+                    placeholder="Club"
                     value={dadosForm.club}
                     onChange={({target}) => handleDadosForm(target, "club")}
                 />

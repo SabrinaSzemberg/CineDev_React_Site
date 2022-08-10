@@ -75,12 +75,14 @@ const AdicionarCliente = () => {
                 <label htmlFor="">Payment</label>
                 <input
                     type="text"
+                    placeholder="Payment"
                     value={dadosForms.PAYMENT}
                     onChange={({target}) => handleDadosForm(target, "PAYMENT")}
                 />
                 <label htmlFor="">Club</label>
                 <input
                     type="text"
+                    placeholder="Club"
                     value={dadosForms.CLUB}
                     onChange={({target}) => handleDadosForm(target, "CLUB")}
                 />
