@@ -43,7 +43,7 @@ const AdicionarCliente = () => {
     <section className={S.content}>
         <section className={S.upperSection}>
         <Formik
-      initialValues={{ name:"" , email: "", password: "" }}
+      initialValues={{ nome:"" , email: "", password: "" }}
       validationSchema={validationSchema}
     >
             <form>
