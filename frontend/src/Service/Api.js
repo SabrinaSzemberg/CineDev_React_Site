@@ -6,7 +6,7 @@ const instance = axios.create({
     //     post: {['Access-Control-Allow-Origin']: '*'},
     //     ['Content-Type']: 'application/json;charset=utf-8'
     // }
-    baseURL: 'http://localhost:3000'
+    baseURL: 'http://localhost:3030'
 })
 
 export const getClientes = async () =>{
