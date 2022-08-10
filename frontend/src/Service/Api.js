@@ -41,5 +41,4 @@ export const deleteClienteId = async (id) =>{
     console.log(response)
     const alerta = alert("Cliente deletado")
     return alerta
-
 }

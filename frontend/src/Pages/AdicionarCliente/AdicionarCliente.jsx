@@ -68,8 +68,8 @@ const AdicionarCliente = () => {
                 
                 <Field
                     type="password" name="password" placeholder="Password" 
-                    value={dadosForms.password}
-                    onChange={({target}) => handleDadosForm(target, "password")}/>
+                    value={dadosForms.PASSWORD}
+                    onChange={({target}) => handleDadosForm(target, "PASSWORD")}/>
                     <ErrorMessage component="div" name="password" />
                    
                 <label htmlFor="">Payment</label>
