@@ -31,8 +31,9 @@ const EditarCliente = () => {
         );
     }
 
-    const fazerPut = () => {
-        const toUpperKeys = parseToLowerOrUpperCase(dadosForm, true)
+    const fazerPut = async () => {
+        console.log(dadosForm)
+        const toUpperKeys = await parseToLowerOrUpperCase(dadosForm, true)
         putClientes(toUpperKeys, dadosForm.id)
     }
 

@@ -1,6 +1,11 @@
 import axios from "axios";
 
 const instance = axios.create({
+    // baseURL: 'https://cinedevjessica.herokuapp.com/',
+    // headers: {
+    //     post: {['Access-Control-Allow-Origin']: '*'},
+    //     ['Content-Type']: 'application/json;charset=utf-8'
+    // }
     baseURL: 'http://localhost:3000'
 })
 
