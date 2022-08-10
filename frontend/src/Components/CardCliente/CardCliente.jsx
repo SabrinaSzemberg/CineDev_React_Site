@@ -4,7 +4,8 @@ import S from "./CardCliente.module.css";
 import { deleteClienteId } from "../../Service/Api";
 
 
-
+const CardCliente = ({ id, name, email, password, payment, club }) => {
+    
   async function requisition() {
     await deleteClienteId(id);
     location.reload()
