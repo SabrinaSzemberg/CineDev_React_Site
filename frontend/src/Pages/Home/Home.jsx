@@ -14,7 +14,7 @@ const Home = () => {
    useEffect(() => {
     setTimeout(() => {
        setRemoveLoading(true)
-    }, 3000) 
+    }, 3500) 
    })
 
    return (
@@ -24,7 +24,7 @@ const Home = () => {
       </section>
       <section className={S.left}>
         <div className={S.options}>
-          <h1>Oque você quer fazer?</h1>
+          <h1>O que você quer fazer?</h1>
           <nav>
             <Link className={S.link} to="/post">Adicionar Cliente</Link>
             <Link className={S.link} to="/get">Lista de Clientes</Link>
