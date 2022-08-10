@@ -7,11 +7,11 @@ import * as yup from "yup";
 const AdicionarCliente = () => {
 
     const [dadosForms, setDados] = useState({
-        NAME:"",
-        EMAIL:"",
-        PASSWORD:"",
-        PAYMENT:"",
-        CLUB:""
+        name:"",
+        email:"",
+        password:"",
+        payment:"",
+        club:""
     });
     
     const validationSchema = yup.object({
@@ -52,15 +52,15 @@ const AdicionarCliente = () => {
                     type="text"
                     name="name"
                     placeholder="Name"
-                    value={dadosForms.NAME}
-                    onChange={({target}) => handleDadosForm(target, "NAME")}/>
+                    value={dadosForms.name}
+                    onChange={({target}) => handleDadosForm(target, "name")}/>
                  <ErrorMessage component="div" name="name" />
                 <label htmlFor="">Email</label>
                 
                 <Field
                     type="email" name="email" placeholder="Email" 
-                    value={dadosForms.EMAIL}
-                    onChange={({target}) => handleDadosForm(target, "EMAIL")}/>
+                    value={dadosForms.email}
+                    onChange={({target}) => handleDadosForm(target, "email")}/>
                     <ErrorMessage component="div" name="email" />
                 
                 
@@ -68,23 +68,21 @@ const AdicionarCliente = () => {
                 
                 <Field
                     type="password" name="password" placeholder="Password" 
-                    value={dadosForms.PASSWORD}
-                    onChange={({target}) => handleDadosForm(target, "PASSWORD")}/>
+                    value={dadosForms.password}
+                    onChange={({target}) => handleDadosForm(target, "password")}/>
                     <ErrorMessage component="div" name="password" />
                    
                 <label htmlFor="">Payment</label>
                 <input
                     type="text"
-                    placeholder="Payment"
-                    value={dadosForms.PAYMENT}
-                    onChange={({target}) => handleDadosForm(target, "PAYMENT")}
+                    value={dadosForms.payment}
+                    onChange={({target}) => handleDadosForm(target, "payment")}
                 />
                 <label htmlFor="">Club</label>
                 <input
                     type="text"
-                    placeholder="Club"
-                    value={dadosForms.CLUB}
-                    onChange={({target}) => handleDadosForm(target, "CLUB")}
+                    value={dadosForms.club}
+                    onChange={({target}) => handleDadosForm(target, "club")}
                 />
               
             </form>

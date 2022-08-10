@@ -4,6 +4,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 15vh 85vh;
     padding-bottom: 40px;
+    margin-bottom: 40vh;
 }
 
 .titulo{

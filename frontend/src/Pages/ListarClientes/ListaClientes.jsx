@@ -25,13 +25,13 @@ const ListaClientes = () => {
         {!!clientes ? clientes.map((cliente) => {
             return (
               <CardCliente
-                key={cliente.ID}
-                id={cliente.ID}
-                name={cliente.NAME}
-                email={cliente.EMAIL}
-                password={cliente.PASSWORD}
-                payment={cliente.PAYMENT}
-                club={cliente.CLUB}
+                key={cliente.id}
+                id={cliente.id}
+                name={cliente.name}
+                email={cliente.email}
+                password={cliente.password}
+                payment={cliente.payment}
+                club={cliente.club}
               />
             );
           }) : <Loading/>}
