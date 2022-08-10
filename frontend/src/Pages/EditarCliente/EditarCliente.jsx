@@ -74,7 +74,7 @@ const EditarCliente = () => {
                     value={dadosForm.email}
                     onChange={({target}) => handleDadosForm(target, "email")}
                 />
-                <ErrorMessage component="div" name="email" />
+                <ErrorMessage component="di" name="email" />
                 <label htmlFor="">Password</label>
                 <Field
                     type="text"
