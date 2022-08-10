@@ -5,8 +5,16 @@ import {useSearchParams} from "react-router-dom";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as yup from "yup";
 
-const EditarCliente = () => {
+const AdicionarCliente = () => {
 
+    const [dadosForms, setDados] = useState({
+        name:"",
+        email:"",
+        password:"",
+        payment:"",
+        club:""
+    });
+    
     const validationSchema = yup.object({
         nome: yup
         .string()
@@ -21,6 +29,7 @@ const EditarCliente = () => {
           .min(8, "Senha no  minimo com 8 caracteres")
           .required("A senha é obrigatória")
       });
+      
     const [searchParams] = useSearchParams();
     const [dadosForm, setDadosForm] = useState({});
 
@@ -34,17 +43,7 @@ const EditarCliente = () => {
 
     function handleDadosForm(target, nomeInput){
         const value = target.value;
-        setDadosForm({...dadosForm, [nomeInput]: value});
-    }
-
-    function parseToLowerOrUpperCase(obj, upper) {
-        const entries = Object.entries(obj);
-
-        return Object.fromEntries(
-            entries.map(([key, value]) => {
-                return [upper ? key.toUpperCase() : key.toLowerCase(), value];
-            }),
-        );
+        setDados({...dadosForms, [nomeInput]: value});
     }
 
     const fazerPut = async () => {
@@ -54,7 +53,7 @@ const EditarCliente = () => {
     }
 
   return (
-
+    
     <section className={S.content}>
         <section className={S.upperSection}>
         <Formik
@@ -92,6 +91,7 @@ const EditarCliente = () => {
                     placeholder="Payment"
                     value={dadosForm.payment}
                     onChange={({target}) => handleDadosForm(target, "payment")}
+
                 />
                 <label htmlFor="">Club</label>
                 <input
@@ -100,15 +100,17 @@ const EditarCliente = () => {
                     value={dadosForm.club}
                     onChange={({target}) => handleDadosForm(target, "club")}
                 />
+              
             </form>
             </Formik>
         </section>
         <section className={S.lowerSection}>
-            <button onClick={()=>fazerPut()}>Salvar</button>
+            <button  type="submit" onClick={()=>fazerPost()}>Salvar</button>
+          
         </section>
     </section>
-
+    
   )
 }
 
-export default EditarCliente
+export default AdicionarCliente
