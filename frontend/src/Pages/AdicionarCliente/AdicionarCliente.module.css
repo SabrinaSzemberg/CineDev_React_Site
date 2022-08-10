@@ -11,7 +11,7 @@
     grid-column-end: 3;
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 70px;
     padding: 25px 0;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -28,7 +28,12 @@
 .upperSection>form>input{
     height: 35px;
     margin-bottom: 15px;
-    border-radius: 2px;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.upperSection>form>label{
+    padding: 2px;
 }
 
 .lowerSection{
@@ -40,20 +45,24 @@
     height: 50%;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
+    padding: 10px;
 }
 
 .lowerSection>button{
     width: 75%;
     height: 35px;
     border-radius: 3px;
+    margin-top: 15px;
     transition-duration: 0.2s;
     background-color: red;
     color: white;
     border: none;
     box-shadow: 1px 1px 1px black;
+    
 }
 
 .lowerSection>button:hover{
     background-color: rgba(236, 228, 228, 0.09);
     color: white;
+    cursor: pointer;
 }
