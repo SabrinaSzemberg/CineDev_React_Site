@@ -3,12 +3,13 @@ import { Link } from "react-router-dom";
 import S from "./CardCliente.module.css";
 import { deleteClienteId } from "../../Service/Api";
 
-async function requisition() {
-  await deleteClienteId(id);
-  location.reload();
-}
-
 const CardCliente = ({id, name, email, password, payment, club}) => {
+  async function requisition() {
+    await deleteClienteId(id);
+    location.reload()
+    }
+ 
+
   return (
     <form>
       <div className={S.card}>

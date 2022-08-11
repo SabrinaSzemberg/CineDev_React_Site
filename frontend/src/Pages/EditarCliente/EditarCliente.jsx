@@ -7,7 +7,7 @@ import * as yup from "yup";
 
 const AdicionarCliente = () => {
 
-    const [dadosForms, setDados] = useState({
+    const [dadosInput, setDadosInput] = useState({
         name:"",
         email:"",
         password:"",
@@ -37,19 +37,20 @@ const AdicionarCliente = () => {
 
     async function requisition() {
         const response = await getClienteId(searchParams.get('id'));
-        const responseLoweredCaseKeys = parseToLowerOrUpperCase(response[0], false)
-        setDadosForm(responseLoweredCaseKeys)
+        console.log(response)
+        // const responseLoweredCaseKeys = await parseToLowerOrUpperCase(response[0], false)
+        setDadosForm(dadosInput)
     }
 
     function handleDadosForm(target, nomeInput){
         const value = target.value;
-        setDados({...dadosForms, [nomeInput]: value});
+        setDadosInput({...dadosInput, [nomeInput]: value});
     }
 
     const fazerPut = async () => {
         console.log(dadosForm)
-        const toUpperKeys = await parseToLowerOrUpperCase(dadosForm, true)
-        await putClientes(toUpperKeys, dadosForm.id)
+        // const toUpperKeys = await parseToLowerOrUpperCase(dadosForm, true)
+        await putClientes(dadosForm, dadosForm.id)
     }
 
   return (
@@ -75,12 +76,11 @@ const AdicionarCliente = () => {
                     value={dadosForm.email}
                     onChange={({target}) => handleDadosForm(target, "email")}
                 />
-                <ErrorMessage component="di" name="email" />
+                <ErrorMessage component="div" name="email" />
                 <label htmlFor="">Password</label>
                 <Field
                     type="text"
                     placeholder="Password"
-                    
                     value={dadosForm.password}
                     onChange={({target}) => handleDadosForm(target, "password")}
                 />
@@ -105,7 +105,7 @@ const AdicionarCliente = () => {
             </Formik>
         </section>
         <section className={S.lowerSection}>
-            <button  type="submit" onClick={()=>fazerPost()}>Salvar</button>
+            <button type="submit" onClick={()=>fazerPut()}>Salvar</button>
           
         </section>
     </section>
